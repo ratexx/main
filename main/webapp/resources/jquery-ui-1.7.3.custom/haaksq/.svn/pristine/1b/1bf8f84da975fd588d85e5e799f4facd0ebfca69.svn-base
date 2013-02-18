@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 28, 2012 12:13:20 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.haak.haaksq.form.VCommunityResource" table="v_community_resource" catalog="haaksquare_db">
+            <id name="communityResourceId" type="int">
+                <column name="community_resource_id" />
+            </id>
+            <property name="communityId" type="int">
+                <column name="community_id" />
+            </property>
+            <property name="seq" type="int">
+                <column name="seq" />
+            </property>
+            <property name="fgOpen" type="string">
+                <column name="fg_open" length="1" />
+            </property>
+            <property name="fgPublic" type="string">
+                <column name="fg_public" length="1" />
+            </property>
+            <property name="resourceCategoryId" type="java.lang.Integer">
+                <column name="resource_category_id" />
+            </property>
+            <property name="resourceSubCategoryId" type="java.lang.Integer">
+                <column name="resource_sub_category_id" />
+            </property>
+            <property name="resourceName" type="string">
+                <column name="resource_name" length="500" />
+            </property>
+            <property name="resourceDetail" type="string">
+                <column name="resource_detail" length="2000" />
+            </property>
+            <property name="fgShow" type="string">
+                <column name="fg_show" length="1" />
+            </property>
+            <property name="modifyDate" type="timestamp">
+                <column name="modify_date" length="19" />
+            </property>
+            <property name="createBy" type="java.lang.Integer">
+                <column name="create_by" />
+            </property>
+            <property name="createDate" type="timestamp">
+                <column name="create_date" length="19" />
+            </property>
+            <property name="modifyBy" type="java.lang.Integer">
+                <column name="modify_by" />
+            </property>
+            <property name="fileName" type="string">
+                <column name="file_name" length="200" />
+            </property>
+            <property name="pathName" type="string">
+                <column name="path_name" length="200" />
+            </property>
+            <property name="fileDetail" type="string">
+                <column name="file_detail" length="2000" />
+            </property>
+            <property name="attachUrl" type="string">
+                <column name="attach_url" length="200" />
+            </property>
+        
+    </class>
+</hibernate-mapping>

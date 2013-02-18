@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+		
+		
+		
+<!-- <hibernate-configuration>
+    <session-factory name="sessionFactory">
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">haak2011</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/haaksquare_db</property>
+        <property name="hibernate.connection.username">haaksquare_dbr</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        
+         
+        
+    </session-factory>
+</hibernate-configuration> -->
+
+
+<hibernate-configuration>
+    <session-factory>
+<!--         <mapping class="com.haak.haaksq.form.Contact" />
+        <mapping class="com.haak.haaksq.form.Worklist2" /> 
+        <mapping class="com.haak.haaksq.form.Sms" />
+        <mapping class="com.haak.haaksq.form.SmsTo" />
+        <mapping class="com.haak.haaksq.form.SmsCredit" />
+        <mapping class="com.haak.haaksq.form.SmsHistory" />-->
+    </session-factory>
+ 
+</hibernate-configuration>

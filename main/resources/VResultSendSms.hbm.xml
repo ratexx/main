@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 2, 2012 7:24:15 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.haak.haaksq.form.VResultSendSms" table="v_result_send_sms" catalog="haaksquare_db">
+        
+           
+            <id name="smsToId" type="int">
+                <column name="sms_to_id" />
+            </id>
+            <property name="smsMessage" type="string">
+                <column name="sms_message" length="2000" />
+            </property>
+            <property name="smsId" type="string">
+                <column name="sms_id" length="2000" />
+            </property>
+            <property name="communityId" type="int">
+                <column name="community_id" />
+            </property>
+            <property name="userId" type="int">
+                <column name="user_id" />
+            </property>
+            <property name="mobileNo" type="string">
+                <column name="mobile_no" length="20" />
+            </property>
+            <property name="smsStatus" type="string">
+                <column name="sms_status" length="100" />
+            </property>
+            <property name="smsCradit" type="int">
+                <column name="sms_cradit" />
+            </property>
+            <property name="createDate" type="date">
+                <column name="create_date" length="10" />
+            </property>
+            <property name="createBy" type="int">
+                <column name="create_by" />
+            </property>
+        
+    </class>
+</hibernate-mapping>

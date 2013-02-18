@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 10, 2012 9:27:26 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.haak.haaksq.form.VCommunity" table="v_community" catalog="haaksquare_db">
+        
+            <id name="communityId" type="int">
+                <column name="community_id" />
+            </id>
+            <property name="communityName" type="string">
+                <column name="community_name" length="200" />
+            </property>
+            <property name="communityTypeName" type="string">
+                <column name="community_type_name" />
+            </property>
+            <property name="provinceName" type="string">
+                <column name="province_name" />
+            </property>
+            <property name="amphoeName" type="string">
+                <column name="amphoe_name" />
+            </property>
+            <property name="tumbolName" type="string">
+                <column name="tumbol_name" length="100" />
+            </property>
+            <property name="googleMapLatitude" type="string">
+                <column name="google_map_latitude" length="500" />
+            </property>
+            <property name="googleMapLongtitude" type="string">
+                <column name="google_map_longtitude" length="500" />
+            </property>
+            <property name="googleMapUrl" type="string">
+                <column name="google_map_url" length="500" />
+            </property>
+            <property name="communityShotDetail" type="string">
+                <column name="community_shot_detail" length="1000" />
+            </property>
+            <property name="packageId" type="java.lang.Integer">
+                <column name="package_id" />
+            </property>
+            <property name="fileName" type="string">
+                <column name="file_name" length="200" />
+            </property>
+            <property name="pathName" type="string">
+                <column name="path_name" length="200" />
+            </property>
+            <property name="fileTypeId" type="int">
+                <column name="file_type_id" />
+            </property>
+            <property name="communitySize" type="string">
+                <column name="community_size" length="100" />
+            </property>
+            <property name="communityDetail" type="string">
+                <column name="community_detail" length="2000" />
+            </property>
+            <property name="companyOwner" type="string">
+                <column name="company_owner" length="200" />
+            </property>
+            <property name="startPrise" type="java.lang.Long">
+                <column name="start_prise" precision="10" scale="0" />
+            </property>
+            <property name="endPrise" type="java.lang.Long">
+                <column name="end_prise" precision="10" scale="0" />
+            </property>
+            <property name="addressId" type="java.lang.Integer">
+                <column name="address_id" />
+            </property>
+            <property name="addressNo" type="string">
+                <column name="address_no" length="1000" />
+            </property>
+            <property name="soi" type="string">
+                <column name="soi" length="200" />
+            </property>
+            <property name="moo" type="string">
+                <column name="moo" length="200" />
+            </property>
+            <property name="road" type="string">
+                <column name="road" length="200" />
+            </property>
+            <property name="state" type="string">
+                <column name="state" length="200" />
+            </property>
+            <property name="zipcode" type="string">
+                <column name="zipcode" length="10" />
+            </property>
+            <property name="country" type="string">
+                <column name="country" length="200" />
+            </property>
+            <property name="telephone" type="string">
+                <column name="telephone" length="100" />
+            </property>
+            <property name="mobile" type="string">
+                <column name="mobile" length="100" />
+            </property>
+            <property name="unitAll" type="java.lang.Integer">
+                <column name="unit_all" />
+            </property>
+            <property name="unitLive" type="java.lang.Integer">
+                <column name="unit_live" />
+            </property>
+            <property name="unitSales" type="java.lang.Integer">
+                <column name="unit_sales" />
+            </property>
+            <property name="unitResidence" type="java.lang.Integer">
+                <column name="unit_residence" />
+            </property>
+            <property name="cat" type="java.lang.Integer">
+                <column name="cat" />
+            </property>
+            <property name="dog" type="java.lang.Integer">
+                <column name="dog" />
+            </property>
+            <property name="contractorsNo" type="java.lang.Integer">
+                <column name="contractors_no" />
+            </property>
+            <property name="contractorsEmployeesNo" type="java.lang.Integer">
+                <column name="Contractors_employees_no" />
+            </property>
+            <property name="fgOpen" type="string">
+                <column name="fg_open" length="1" />
+            </property>
+        
+    </class>
+</hibernate-mapping>

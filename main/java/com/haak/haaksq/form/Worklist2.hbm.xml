@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 23, 2012 1:09:34 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.haak.haaksq.autogen.Worklist2" table="worklist2" catalog="HAAKSQUARE_DB">
+        <composite-id name="id" class="com.haak.haaksq.autogen.Worklist2Id">
+            <key-property name="worklistId" type="int">
+                <column name="Worklist_Id" />
+            </key-property>
+            <key-property name="worklistSeq" type="int">
+                <column name="worklist_seq" />
+            </key-property>
+        </composite-id>
+        <property name="communityId" type="java.lang.Integer">
+            <column name="community_id" />
+        </property>
+        <property name="worklistTypeId" type="java.lang.Integer">
+            <column name="worklist_type_id" />
+        </property>
+        <property name="worklistSubjectId" type="java.lang.Integer">
+            <column name="worklist_subject_id" />
+        </property>
+        <property name="worklistName" type="string">
+            <column name="worklist_name" length="200" />
+        </property>
+        <property name="worklistDetail" type="string">
+            <column name="worklist_detail" length="2000" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="200" />
+        </property>
+        <property name="fromUserName" type="string">
+            <column name="from_user_name" length="100" />
+        </property>
+        <property name="fromName" type="string">
+            <column name="from_name" length="200" />
+        </property>
+        <property name="fromEmail" type="string">
+            <column name="from_email" length="100" />
+        </property>
+        <property name="toUserName" type="string">
+            <column name="to_user_name" length="100" />
+        </property>
+        <property name="worklistStatusId" type="java.lang.Integer">
+            <column name="worklist_status_id" />
+        </property>
+        <property name="jobDetails" type="string">
+            <column name="job_details" length="2000" />
+        </property>
+        <property name="modifyBy" type="java.lang.Integer">
+            <column name="modify_by" />
+        </property>
+        <property name="modifyDate" type="timestamp">
+            <column name="modify_date" length="19" />
+        </property>
+        <property name="createBy" type="java.lang.Integer">
+            <column name="create_by" />
+        </property>
+        <property name="createDate" type="date">
+            <column name="create_date" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

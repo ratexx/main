@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 10, 2012 10:05:31 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.haak.haaksq.form.CommunityNew" table="community_new" catalog="haaksquare_db">
+        <id name="communityNewId" type="java.lang.Integer">
+            <column name="community_new_id" />
+            <generator class="identity" />
+        </id>
+        <property name="communityId" type="int">
+            <column name="community_id" not-null="true" />
+        </property>
+        <property name="newSeq" type="int">
+            <column name="new_seq" not-null="true" />
+        </property>
+        <property name="fgPublic" type="string">
+            <column name="fg_public" length="1" />
+        </property>
+        <property name="newSubject" type="string">
+            <column name="new_subject" length="1000" />
+        </property>
+        <property name="newDetail" type="string">
+            <column name="new_detail" length="2000" />
+        </property>
+        <property name="lifestyleLink" type="string">
+            <column name="lifestyle_link" length="300" />
+        </property>
+        <property name="lifestyleUrl" type="string">
+            <column name="lifestyle_url" length="1000" />
+        </property>
+        <property name="lifestyleGoogleMap" type="string">
+            <column name="lifestyle_google_map" length="1000" />
+        </property>
+        <property name="googleMapLatitude" type="string">
+            <column name="google_map_latitude" length="500" />
+        </property>
+        <property name="googleMapLongtitude" type="string">
+            <column name="google_map_longtitude" length="500" />
+        </property>
+        <property name="googleMapUrl" type="string">
+            <column name="google_map_url" length="500" />
+        </property>
+        <property name="modifyDate" type="timestamp">
+            <column name="modify_date" length="19" />
+        </property>
+        <property name="createBy" type="java.lang.Integer">
+            <column name="create_by" />
+        </property>
+        <property name="createDate" type="date">
+            <column name="create_date" length="10" />
+        </property>
+        <property name="modifyBy" type="java.lang.Integer">
+            <column name="modify_by" />
+        </property>
+        <property name="fromSource" type="string">
+            <column name="from_source" length="1000" />
+        </property>
+        <property name="fgOpen" type="string">
+            <column name="fg_open" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

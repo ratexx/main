@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 22, 2012 2:01:59 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.haak.haaksq.form.WorklistId" table="WORKLISTID">
+        <id name="worklistId" type="int">
+            <column name="WORKLISTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="worklistSeq" type="int">
+            <column name="WORKLISTSEQ" />
+        </property>
+    </class>
+</hibernate-mapping>

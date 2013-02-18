@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+
+    <definition name="base.definition"
+        template="/WEB-INF/jsp/layout.jsp">
+        <put-attribute name="title" value="HaakSquare!" />
+        <put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="streamline" value="/WEB-INF/jsp/HaakStreamLine.jsp" />
+        <put-attribute name="adv" value="/WEB-INF/jsp/adv.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+    </definition>
+    
+        <definition name="home.definition"
+        template="/WEB-INF/jsp/layout-home.jsp">
+        <put-attribute name="title" value="HaakSquare!" />
+        <put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="streamline" value="/WEB-INF/jsp/HaakStreamLine.jsp" />
+        <put-attribute name="adv" value="/WEB-INF/jsp/adv.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+    </definition>
+
+
+    
+        <definition name="logout.definition"
+        template="/WEB-INF/jsp/layout-blankpage.jsp">
+        <put-attribute name="title" value="HaakSquare!" />
+        <put-attribute name="body" value="" />
+    </definition>
+    
+            <definition name="admin.definition"
+        template="/WEB-INF/jsp/layout-adminpage.jsp">
+        <put-attribute name="title" value="HaakSquare!" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/amenu.jsp" />
+        <put-attribute name="body" value="" />
+    </definition>
+ 
+    <definition name="sms.definition"
+        template="/WEB-INF/jsp/layout-sms.jsp">
+        <put-attribute name="title" value="HaakSquare!" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/amenu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="body2" value="" />
+    </definition>
+ 
+ 
+    <definition name="contact" extends="base.definition">
+        <put-attribute name="title" value="Contact Manager" />
+        <put-attribute name="body" value="/WEB-INF/jsp/contact.jsp" />
+    </definition>
+    
+    <definition name="ajax-add-page" extends="base.definition">
+        <put-attribute name="title" value="Contact Manager" />
+        <put-attribute name="body" value="/WEB-INF/jsp/ajax-add-page.jsp" />
+    </definition>    
+
+    <definition name="index" extends="base.definition">
+        <put-attribute name="title" value="Contact Manager" />
+        <put-attribute name="body" value="/WEB-INF/jsp/contact.jsp" />
+    </definition>    
+
+
+    <definition name="friends" extends="base.definition">
+        <put-attribute name="title" value="My Friend" />
+        <put-attribute name="body" value="/WEB-INF/jsp/friends.jsp" />
+    </definition>    
+
+     <definition name="office" extends="base.definition">
+        <put-attribute name="title" value="Office" />
+        <put-attribute name="body" value="/WEB-INF/jsp/office.jsp" />
+    </definition>     
+    
+     <definition name="about" extends="base.definition">
+        <put-attribute name="title" value="HaakSquare!" />
+        <put-attribute name="body" value="/WEB-INF/jsp/about.jsp" />
+    </definition>       
+    
+    
+     <definition name="home" extends="home.definition">
+        <put-attribute name="title" value="HaakSquare!" />
+        <put-attribute name="body" value="/WEB-INF/jsp/home.jsp" />
+    </definition>   
+    
+     <definition name="logout" extends="logout.definition">
+        <put-attribute name="title" value="HaakSquare!" />
+        <put-attribute name="body" value="/WEB-INF/jsp/logout.jsp" />
+    </definition>       
+    
+    
+         <definition name="testsms.html" extends="logout.definition">
+        <put-attribute name="title" value="HaakSquare!" />
+        <put-attribute name="body" value="/WEB-INF/jsp/haaksms2.jsp" />
+    </definition>       
+    
+    
+     <!-- Upload Page -->
+
+    
+    
+                      <definition name="saveIMGETC.html" extends="base.definition">
+        <put-attribute name="title" value="News Update" />
+        <put-attribute name="body" value="/WEB-INF/jsp/uploadpage3.jsp" />
+    </definition>   
+    
+    
+                  <definition name="uploadpage2.html" extends="base.definition">
+        <put-attribute name="title" value="News Update" />
+        <put-attribute name="body" value="/WEB-INF/jsp/uploadpage2.jsp" />
+    </definition>   
+
+
+
+    <definition name="uploadpage.html" extends="base.definition">
+
+        <put-attribute name="title" value="News Update" />
+        <put-attribute name="body" value="/WEB-INF/jsp/uploadpage.jsp" />
+    </definition>   
+    
+    
+    
+     
+     <definition name="uploadsuccess.html" extends="base.definition">
+        <put-attribute name="title" value="News Update" />
+        <put-attribute name="body" value="/WEB-INF/jsp/uploadsuccess.jsp" />
+    </definition>   
+    
+    <!-- Blog Community Page -->
+         <definition name="community" extends="base.definition">
+        <put-attribute name="title" value="Module Community" />
+        <put-attribute name="body" value="/WEB-INF/jsp/module.jsp" />
+    </definition>    
+         <definition name="ContactForm.htm" extends="base.definition">
+        <put-attribute name="title" value="Contact Us" />
+        <put-attribute name="body" value="/WEB-INF/jsp/ContactFormInput.jsp" />
+    </definition>    
+        
+    
+    
+    <!-- Contact us Page -->
+    
+
+    <definition name="userdetails.html" extends="base.definition">
+        <put-attribute name="title" value="User Profiles" />
+        <put-attribute name="body" value="/WEB-INF/jsp/userdetails.jsp" />    
+    </definition>
+
+    <definition name="welcome.htm" extends="home.definition">
+        <!-- <put-attribute name="title" value="HaakSquare!xxx" /> -->
+        <put-attribute name="title" value="HaakSquare!" />
+        <put-attribute name="body" value="/WEB-INF/jsp/welcome-pong.jsp" />
+    </definition>          
+    
+        <definition name="welcome2.htm" extends="home.definition">
+        <!-- <put-attribute name="title" value="HaakSquare!xxx" /> -->
+        <put-attribute name="title" value="HaakSquare!" />
+        <put-attribute name="body" value="/WEB-INF/jsp/welcome-pong2.jsp" />
+    </definition>   
+    
+     <definition name="contract-us" extends="base.definition">
+        <put-attribute name="title" value="Contact Us" />
+        <put-attribute name="body" value="/WEB-INF/jsp/contact-us.jsp" />
+    </definition>       
+ 
+      <definition name="fullcommu" extends="base.definition">
+        <put-attribute name="title" value="Communitys Details" />
+        <put-attribute name="body" value="/WEB-INF/jsp/contact/fullCommudetails.jsp" />
+    </definition>       
+ 
+       <definition name="gallery" extends="base.definition">
+        <put-attribute name="title" value="Gallery's Communitys " />
+        <put-attribute name="body" value="/WEB-INF/jsp/gallery.jsp" />
+    </definition>       
+ 
+ <!--  PAGE Navigate-->
+    <definition name="community.html" extends="base.definition">
+        <put-attribute name="title" value="Community Details " />
+        <put-attribute name="body" value="/WEB-INF/jsp/community.jsp" />
+    </definition>       
+ 
+     <definition name="contactform.html" extends="base.definition">
+        <put-attribute name="title" value="contactform contactform " />
+        <put-attribute name="body" value="/WEB-INF/jsp/contactform.jsp" />
+    </definition>     
+     <definition name="bod.html" extends="base.definition">
+        <put-attribute name="title" value="BOD Detail" />
+        <put-attribute name="body" value="/WEB-INF/jsp/bod.jsp" />
+    </definition>     
+ 
+     <definition name="gallery.html" extends="base.definition">
+        <put-attribute name="title" value="gallery Detail" />
+        <put-attribute name="body" value="/WEB-INF/jsp/gallery.jsp" />
+    </definition>     
+ 
+      <definition name="liftstyle.html" extends="base.definition">
+        <put-attribute name="title" value="liftstyle Detail" />
+        <put-attribute name="body" value="/WEB-INF/jsp/liftstyle.jsp" />
+    </definition>     
+ 
+ 
+       <definition name="whatnearby.html" extends="base.definition">
+        <put-attribute name="title" value="whatnearby Detail" />
+        <put-attribute name="body" value="/WEB-INF/jsp/whatnearby.jsp" />
+    </definition>     
+    
+       <definition name="opportunities.html" extends="base.definition">
+        <put-attribute name="title" value="opportunities Detail" />
+        <put-attribute name="body" value="/WEB-INF/jsp/opportunities.jsp" />
+    </definition>         
+    
+ 
+        <definition name="saleandrent.html" extends="base.definition">
+        <put-attribute name="title" value="saleandrent Detail" />
+        <put-attribute name="body" value="/WEB-INF/jsp/saleandrent.jsp" />
+    </definition>    
+      
+         <definition name="news.html" extends="base.definition">
+        <put-attribute name="title" value="News Update" />
+        <put-attribute name="body" value="/WEB-INF/jsp/news.jsp" />
+    </definition>    
+    
+             <definition name="inbox.html" extends="base.definition">
+        <put-attribute name="title" value="News Update" />
+        <put-attribute name="body" value="/WEB-INF/jsp/inbox.jsp" />
+    </definition>  
+    
+             <definition name="taskmanager.html" extends="base.definition">
+        <put-attribute name="title" value="News Update" />
+        <put-attribute name="body" value="/WEB-INF/jsp/taskmanager.jsp" />
+    </definition>      
+    
+
+    
+     <definition name="newsgen.html" extends="base.definition">
+        <put-attribute name="title" value="News Update" />
+        <put-attribute name="body" value="/WEB-INF/jsp/NewsGeneral.jsp" />    
+    </definition> 
+    
+     <definition name="newscom.html" extends="base.definition">
+        <put-attribute name="title" value="News Update" />
+        <put-attribute name="body" value="/WEB-INF/jsp/NewsCommunity.jsp" />    
+        
+           </definition> 
+           
+     <definition name="documents.html" extends="base.definition">
+        <put-attribute name="title" value="documents Update" />
+        <put-attribute name="body" value="/WEB-INF/jsp/resource.jsp" />    
+        
+           </definition>            
+           
+     <definition name="contactNum.html" extends="base.definition">
+        <put-attribute name="title" value="News Update" />
+        <put-attribute name="body" value="/WEB-INF/jsp/contactnumber.jsp" />             
+    </definition> 
+    <!-- ADMIN PAGE -->
+     <definition name="adminmate.html" extends="admin.definition">
+        <put-attribute name="title" value="Admin Page" />
+        <put-attribute name="body" value="/WEB-INF/jsp/amainPage.jsp" />             
+    </definition> 
+
+     <definition name="usermanage.html" extends="admin.definition">
+        <put-attribute name="title" value="Admin Page" />
+        <put-attribute name="body" value="/WEB-INF/jsp/userList.jsp" />             
+    </definition> 
+    
+
+         <definition name="inputUser.html" extends="admin.definition">
+        <put-attribute name="title" value="News Update" />
+        <put-attribute name="body" value="/WEB-INF/jsp/userform.jsp" />    
+    </definition>
+    
+     <definition name="inputNews.html" extends="admin.definition">
+        <put-attribute name="title" value="News Update" />
+        <put-attribute name="body" value="/WEB-INF/jsp/inputFormNews.jsp" />    
+    </definition> 
+     
+     <definition name="newuser.html" extends="admin.definition">
+        <put-attribute name="title" value="News Update" />
+        <put-attribute name="body" value="/WEB-INF/jsp/adduserdetails.jsp" />    
+    </definition> 
+    
+    <definition name="adminuserdetails.html" extends="admin.definition">
+        <put-attribute name="title" value="User Profiles" />
+        <put-attribute name="body" value="/WEB-INF/jsp/adminuserdetails.jsp" />    
+    </definition>
+    
+    
+    <definition name="haaksms.html" extends="admin.definition">
+        <put-attribute name="title" value="Haak SMS" />
+        <put-attribute name="body" value="/WEB-INF/jsp/haaksms.jsp" />    
+    </definition>
+
+ <definition name="error.html" extends="logout.definition">
+        <put-attribute name="title" value="HaakSquare!" />
+        <put-attribute name="body" value="/WEB-INF/jsp/error.jsp" />
+    </definition>      
+    
+    <definition name="naviadmin" extends="logout.definition">
+        <put-attribute name="title" value="Haak Square .:Admin:." />
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/adminnavi.jsp" />    
+    </definition>
+    
+    
+    
+
+         <definition name="admin.html" extends="logout.definition">
+        <put-attribute name="title" value="Haak Square .:Admin:." />
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/admin.jsp" />    
+    </definition>
+
+
+
+             <definition name="haaksms2u.html" extends="admin.definition">
+        <put-attribute name="title" value="HaakSquare Sms Service !!" />
+        <put-attribute name="body" value="/WEB-INF/jsp/smssender.jsp" />
+    </definition>  
+    
+             <definition name="haaksmssum.html" extends="admin.definition">
+        <put-attribute name="title" value="HaakSquare Sms Service !!" />
+        <put-attribute name="body" value="/WEB-INF/jsp/smssummary.jsp" />
+    </definition>  
+    
+    
+    <definition name="lobby.html" extends="base.definition">
+        <put-attribute name="title" value="HaakSquare!About" />
+        <put-attribute name="body" value="/WEB-INF/jsp/lobby.jsp" />
+    </definition>       
+
+</tiles-definitions>
+
+       
+ 

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 29, 2012 11:08:04 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.haak.haaksq.form.AttachFile" table="attach_file" catalog="HAAKSQUARE_DB">
+        <composite-id name="id" class="com.haak.haaksq.form.AttachFileId">
+            <key-property name="attachId" type="int">
+                <column name="attach_id" />
+            </key-property>
+            <key-property name="communityId" type="int">
+                <column name="community_id" />
+            </key-property>
+            <key-property name="linkId" type="int">
+                <column name="link_id" />
+            </key-property>
+            <key-property name="attachSeq" type="int">
+                <column name="attach_seq" />
+            </key-property>
+        </composite-id>
+        <property name="fileTypeId" type="int">
+            <column name="file_type_id" not-null="true" />
+        </property>
+        <property name="fileName" type="string">
+            <column name="file_name" length="200" not-null="true" />
+        </property>
+        <property name="pathName" type="string">
+            <column name="path_name" length="200" not-null="true" />
+        </property>
+        <property name="fileDetail" type="string">
+            <column name="file_detail" length="2000" not-null="true" />
+        </property>
+        <property name="attachUrl" type="string">
+            <column name="attach_url" length="200" not-null="true" />
+        </property>
+        <property name="modifyBy" type="java.lang.Integer">
+            <column name="modify_by" />
+        </property>
+        <property name="modifyDate" type="timestamp">
+            <column name="modify_date" length="19" />
+        </property>
+        <property name="createBy" type="java.lang.Integer">
+            <column name="create_by" />
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name="create_date" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

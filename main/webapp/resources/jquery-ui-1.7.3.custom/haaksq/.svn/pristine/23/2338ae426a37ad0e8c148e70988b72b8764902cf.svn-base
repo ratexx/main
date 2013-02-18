@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 2, 2012 7:24:15 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.haak.haaksq.form.MstRole" table="mst_role" catalog="haaksquare_db">
+        <id name="roleId" type="int">
+            <column name="role_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="roleName" type="string">
+            <column name="role_name" length="200" not-null="true" />
+        </property>
+        <property name="modifyBy" type="java.lang.Integer">
+            <column name="modify_by" />
+        </property>
+        <property name="modifyDate" type="timestamp">
+            <column name="modify_date" length="19" />
+        </property>
+        <property name="createBy" type="java.lang.Integer">
+            <column name="create_by" />
+        </property>
+        <property name="createDate" type="date">
+            <column name="create_date" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,69 @@
+@CHARSET "UTF-8";
+
+
+/* Div Ad Size  */	
+	.toggler { width: 500px; height: 200px; }
+	#button { padding: .5em 1em; text-decoration: none; }
+	#effect { width: 150px; height: 200px; padding: 0.4em; position: relative; }
+	#effect2 { width: 150px; height: 200px; padding: 0.4em; position: relative; }
+	#effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+	
+	
+/* Div Content Size  */	
+#commu_details { width:620px; height: 200px; padding: 0.4em; position: relative; }
+
+
+
+
+/* Div Gallery Size  */
+	#gallery_detail { width: 150px; height: 200px; padding: 0.4em; position: relative; }
+	#demo-frame > div.demo { padding: 10px !important; }
+	.scroll-pane { overflow: auto; width: 250px; float:left;  height: 125px;}
+	.scroll-content { width: 1740px; float: left; margin-bottom: auto; }
+	.scroll-content-item { width: 100px; height: 100px; float: left; margin: 10px; font-size: 3em; line-height: 96px; text-align: center; }
+	* html .scroll-content-item { display: inline; } /* IE6 float double margin bug */
+	.scroll-bar-wrap { clear: left; padding: 0 4px 0 2px; margin: 0 -1px -1px -1px; }
+	.scroll-bar-wrap .ui-slider { background: none; border:0; height: 2em; margin: 0 auto;  }
+	.scroll-bar-wrap .ui-handle-helper-parent { position: relative; width: 100%; height: 100%; margin: 0 auto; }
+	.scroll-bar-wrap .ui-slider-handle { top:.2em; height: 1.5em; }
+	.scroll-bar-wrap .ui-slider-handle .ui-icon { margin: -8px auto 0; position: relative; top: 50%; }
+
+/* Div Opportunities Size  */	
+#opportunities_details { width:250px; height: 200px; padding: 0.4em; position: relative; }
+
+/* Div lifeStyle Size  */
+#sell_buy_details { width:250px; height: 200px; padding: 0.4em; position: relative; }
+
+/* Div Community Detail Size  */
+#blog_commu_full_details { width:700px; height: 900px; padding: 0.4em; position: relative; }
+
+
+
+/* Div Sell Buy Size  */
+#lifeStyle_details { width:250px; height: 200px; padding: 0.4em; position: relative; }
+
+
+/* Css light_box (Popup Img) */
+   	<style type="text/css">
+	/* jQuery lightBox plugin - Gallery style */
+	#gallery {
+		background-color: #444;
+		padding: 10px;
+		width: 520px;
+	}
+	#gallery ul { list-style: none; }
+	#gallery ul li { display: inline; }
+	#gallery ul img {
+		border: 5px solid #3e3e3e;
+		border-width: 5px 5px 20px;
+	}
+	#gallery ul a:hover img {
+		border: 5px solid #fff;
+		border-width: 5px 5px 20px;
+		color: #fff;
+	}
+	#gallery ul a:hover { color: #fff; }
+	</style>
+
+
+

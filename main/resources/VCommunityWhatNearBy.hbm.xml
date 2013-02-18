@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 27, 2012 12:29:23 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.haak.haaksq.form.VCommunityWhatNearBy" table="v_community_what_near_by" catalog="haaksquare_db">  
+            <id name="communityLifestyleId" type="int">
+                <column name="community_lifestyle_id" />
+            </id>
+            <property name="communityId" type="int">
+                <column name="community_id" />
+            </property>
+            <property name="lifestyleName" type="string">
+                <column name="lifestyle_name" />
+            </property>
+            <property name="lifestyleTypeName" type="string">
+                <column name="lifestyle_type_name" />
+            </property>
+            <property name="lifestyleFullName" type="string">
+                <column name="lifestyle_full_name" length="500" />
+            </property>
+            <property name="lifestyleDetail" type="string">
+                <column name="lifestyle_detail" length="1000" />
+            </property>
+            <property name="distanceFromHoa" type="big_decimal">
+                <column name="distance_from_HOA" precision="10" />
+            </property>
+            <property name="lifestyleLink" type="string">
+                <column name="lifestyle_link" length="300" />
+            </property>
+            <property name="lifestyleUrl" type="string">
+                <column name="lifestyle_url" length="1000" />
+            </property>
+            <property name="lifestyleGoogleMap" type="string">
+                <column name="lifestyle_google_map" length="1000" />
+            </property>
+            <property name="googleMapLatitude" type="string">
+                <column name="google_map_latitude" length="500" />
+            </property>
+            <property name="googleMapLongtitude" type="string">
+                <column name="google_map_longtitude" length="500" />
+            </property>
+            <property name="googleMapUrl" type="string">
+                <column name="google_map_url" length="500" />
+            </property>
+            <property name="liftStyleUrl" type="string">
+                <column name="lift_style_url" length="1000" />
+            </property>
+            <property name="lifeStyleGoogleMap" type="string">
+                <column name="life_style_google_map" length="1000" />
+            </property>
+            <property name="languageId" type="java.lang.Integer">
+                <column name="language_id" />
+            </property>
+            <property name="recommende" type="string">
+                <column name="recommende" length="1000" />
+            </property>
+            <property name="address" type="string">
+                <column name="address" length="1000" />
+            </property>
+            <property name="contractNo" type="string">
+                <column name="contract_no" length="200" />
+            </property>
+    </class>
+</hibernate-mapping>

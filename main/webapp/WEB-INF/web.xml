@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	
+	 <context-param>
+	  <param-name>contextConfigLocation</param-name>
+	  <param-value>
+	  		/WEB-INF/spring-config/applicationContext.xml
+	  		/WEB-INF/spring-config/applicationContext-config.xml
+	  </param-value>
+	 </context-param>
+
+	 <listener>
+	  <listener-class>
+	   org.springframework.web.context.ContextLoaderListener
+	  </listener-class>
+	 </listener>
+ 
+	<servlet>
+		<servlet-name>spring</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+<!-- 	  <servlet>
+        <servlet-name>dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet> -->
+	
+	<servlet-mapping>
+		<servlet-name>spring</servlet-name>
+		<url-pattern>/haaksq/*</url-pattern>
+	</servlet-mapping>
+
+
+
+<filter>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+        <param-name>encoding</param-name>
+        <param-value>UTF-8</param-value>
+    </init-param>
+    <init-param>
+        <param-name>forceEncoding</param-name>
+        <param-value>true</param-value>
+    </init-param>
+</filter>
+
+
+
+
+<filter>
+    <filter-name>HaakFilter</filter-name>
+    <filter-class>
+        com.haak.haaksq.filter.HaakFilter
+    </filter-class>
+    <init-param>
+        <param-name>test-param</param-name>
+        <param-value>This parameter is for testing.</param-value>
+    </init-param>
+</filter>
+<filter-mapping>
+    <filter-name>HaakFilter</filter-name>
+    <url-pattern>/haaksq/*</url-pattern>
+</filter-mapping>
+ 
+<!-- 
+com.haak.haaksq.filter;
+<filter>
+    <filter-name>LogFilter</filter-name>
+    <filter-class>
+        net.viralpatel.servlet.filters.LogFilter
+    </filter-class>
+    <init-param>
+        <param-name>test-param</param-name>
+        <param-value>This parameter is for testing.</param-value>
+    </init-param>
+</filter>
+<filter-mapping>
+    <filter-name>LogFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>
+ -->
+
+
+
+<filter-mapping>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <url-pattern>*</url-pattern>
+</filter-mapping>
+
+
+    <welcome-file-list>
+        <welcome-file>redirect.jsp</welcome-file>
+    </welcome-file-list>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
+</web-app>

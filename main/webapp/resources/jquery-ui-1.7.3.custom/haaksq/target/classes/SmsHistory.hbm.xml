@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 1, 2012 8:25:42 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.haak.haaksq.form.SmsHistory" table="sms_history" catalog="haaksquare_db">
+        <id name="smsHistoryId" type="int">
+            <column name="sms_history_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="smsTypeId" type="java.lang.Integer">
+            <column name="sms_type_id" />
+        </property>
+        <property name="credit" type="java.lang.Long">
+            <column name="credit" precision="10" scale="0" />
+        </property>
+        <property name="creditAmount" type="java.lang.Long">
+            <column name="credit_amount" precision="10" scale="0" />
+        </property>
+        <property name="smsDetail" type="string">
+            <column name="sms_detail" length="1000" />
+        </property>
+        <property name="modifyBy" type="java.lang.Integer">
+            <column name="modify_by" />
+        </property>
+        <property name="modifyDate" type="timestamp">
+            <column name="modify_date" length="19" />
+        </property>
+        <property name="createBy" type="java.lang.Integer">
+            <column name="create_by" />
+        </property>
+        <property name="createDate" type="date">
+            <column name="create_date" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

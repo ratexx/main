@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xmlns:lang="http://www.springframework.org/schema/lang"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+        http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+ 
+	<!-- Database -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+		p:location="/WEB-INF/jdbc.properties" />
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close" p:driverClassName="${jdbc.driverClassName}"
+		p:url="${jdbc.databaseurl}" p:username="${jdbc.username}" p:password="${jdbc.password}" />
+
+	<!-- <bean id="sessionFactory"  class="org.springframework.orm.hibernate3.LocalSessionFactoryBean"> -->
+	<bean id="sessionFactory"  class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean"
+		p:packagesToScan="com.haak.haaksq.form"
+			> 
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation">
+			<value>classpath:hibernate.cfg.xml</value>
+		</property>
+		<property name="configurationClass">
+			<value>org.hibernate.cfg.AnnotationConfiguration</value>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${jdbc.dialect}</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+		
+		
+		
+		
+
+		<property name="mappingResources">
+			<list>
+		          <value>UserProfile.hbm.xml</value>
+		          <value>Address.hbm.xml</value>
+		          <value>AttachFile.hbm.xml</value>
+		          <value>UserRole.hbm.xml</value>
+		          <value>VBoard.hbm.xml</value>
+		          <value>VBoardStructure.hbm.xml</value>
+		          <value>CommunityAddress.hbm.xml</value>
+		          <value>CommunityNew.hbm.xml</value>
+		          <value>Worklist2.hbm.xml</value>
+		          <value>VInboxByUser.hbm.xml</value>
+		          <value>VCommunity.hbm.xml</value>  
+		          <value>VTaskManager.hbm.xml</value>
+		          <value>VUserProfile.hbm.xml</value>
+		          <value>CommunityContractNumber.hbm.xml</value>
+		          <value>VCommunityLifestyle.hbm.xml</value>
+		          <value>VCommunityWhatNearBy.hbm.xml</value>
+		          <value>VCommunityResource.hbm.xml</value>
+		          <value>MstRole.hbm.xml</value>
+		          <value>VSmsemailProfiles.hbm.xml</value>
+		          
+			</list>
+		</property>
+
+
+
+	</bean>
+
+
+	<tx:annotation-driven />
+	
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!-- End Database -->
+
+ <bean id="multipartResolver"   class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+ 	<property name="maxUploadSize" value="50000000"/>
+ </bean>
+ 
+</beans>
+	
+	
+

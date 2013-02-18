@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 9, 2012 11:13:13 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.haak.haaksq.form.UserProfile" table="user_profile" catalog="haaksquare_db">
+        <id name="userId" type="java.lang.Integer">
+            <column name="user_id" />
+            <generator class="identity" />
+        </id>
+        <property name="pass" type="string">
+            <column name="pass" length="10" not-null="true" />
+        </property>
+        <property name="communityId" type="int">
+            <column name="community_id" not-null="true" />
+        </property>
+        <property name="userName" type="string">
+            <column name="user_name" length="20" not-null="true" />
+        </property>
+        <property name="firstName" type="string">
+            <column name="first_name" length="200" not-null="true" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="last_name" length="200" />
+        </property>
+        <property name="nickName" type="string">
+            <column name="nick_name" length="100" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="100" />
+        </property>
+        <property name="mobileNo" type="string">
+            <column name="mobile_no" length="200" />
+        </property>
+        <property name="faxNo" type="string">
+            <column name="fax_no" length="200" />
+        </property>
+        <property name="telephoneNo" type="string">
+            <column name="telephone_no" length="200" />
+        </property>
+        <property name="sports" type="string">
+            <column name="sports" length="200" />
+        </property>
+        <property name="hobbies" type="string">
+            <column name="hobbies" length="200" />
+        </property>
+        <property name="profession" type="string">
+            <column name="profession" length="200" />
+        </property>
+        <property name="addressId" type="int">
+            <column name="address_id" not-null="true" />
+        </property>
+        <property name="modifyBy" type="java.lang.Integer">
+            <column name="modify_by" />
+        </property>
+        <property name="modifyDate" type="timestamp">
+            <column name="modify_date" length="19" />
+        </property>
+        <property name="createBy" type="java.lang.Integer">
+            <column name="create_by" />
+        </property>
+        <property name="createDate" type="date">
+            <column name="create_date" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

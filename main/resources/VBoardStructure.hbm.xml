@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 23, 2012 11:44:03 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+ <class catalog="haaksquare_db"
+  name="com.haak.haaksq.form.VBoardStructure" table="v_board_structure">
+  <composite-id class="com.haak.haaksq.form.VBoardStructureId"
+   mapped="false" name="id" unsaved-value="undefined">
+   <key-property name="positionName" type="string">
+    <column length="200" name="position_name"/>
+   </key-property>
+   <key-property name="positionLevel" type="int">
+    <column name="position_level"/>
+   </key-property>
+   <key-property name="communityId" type="int">
+    <column name="community_id"/>
+   </key-property>
+   <key-property name="firstName" type="string">
+    <column length="200" name="first_name"/>
+   </key-property>
+   <key-property name="lastName" type="string">
+    <column length="200" name="last_name"/>
+   </key-property>
+   <key-property name="userName" type="string">
+    <column length="100" name="user_name"/>
+   </key-property>
+   <key-property name="email" type="string">
+    <column length="200" name="email"/>
+   </key-property>
+   <key-property name="languageId" type="int">
+    <column name="language_id"/>
+   </key-property>
+   <key-property name="pathName" type="string">
+    <column length="200" name="path_name"/>
+   </key-property>
+   <key-property name="fileDetail" type="string">
+    <column length="2000" name="file_detail"/>
+   </key-property>
+   <key-property name="attachUrl" type="string">
+    <column length="200" name="attach_url"/>
+   </key-property>
+   <key-property name="fileName" type="string">
+    <column length="200" name="file_name"/>
+   </key-property>
+  </composite-id>
+ </class>
+</hibernate-mapping>

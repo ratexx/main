@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 9, 2012 11:13:13 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.haak.haaksq.form.CommunityAddress" table="community_address" catalog="haaksquare_db">
+        <id name="addressId" type="int">
+            <column name="address_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="addressNo" type="string">
+            <column name="address_no" length="1000" />
+        </property>
+        <property name="soi" type="string">
+            <column name="soi" length="200" />
+        </property>
+        <property name="moo" type="string">
+            <column name="moo" length="200" />
+        </property>
+        <property name="road" type="string">
+            <column name="road" length="200" />
+        </property>
+        <property name="tumbol" type="string">
+            <column name="tumbol" length="200" />
+        </property>
+        <property name="amphoe" type="string">
+            <column name="amphoe" length="200" />
+        </property>
+        <property name="city" type="string">
+            <column name="city" length="200" />
+        </property>
+        <property name="state" type="string">
+            <column name="state" length="200" />
+        </property>
+        <property name="zipcode" type="string">
+            <column name="zipcode" length="10" />
+        </property>
+        <property name="country" type="string">
+            <column name="country" length="200" />
+        </property>
+        <property name="telephone" type="string">
+            <column name="telephone" length="100" />
+        </property>
+        <property name="fax" type="string">
+            <column name="fax" length="100" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="mobile" length="100" />
+        </property>
+        <property name="noOfCars" type="java.lang.Integer">
+            <column name="no_of_cars" />
+        </property>
+        <property name="noOfDogs" type="java.lang.Integer">
+            <column name="no_of_dogs" />
+        </property>
+        <property name="noOfCats" type="java.lang.Integer">
+            <column name="no_of_cats" />
+        </property>
+        <property name="otherPets" type="string">
+            <column name="other_pets" length="300" />
+        </property>
+        <property name="modifyBy" type="java.lang.Integer">
+            <column name="modify_by" />
+        </property>
+        <property name="modifyDate" type="timestamp">
+            <column name="modify_date" length="19" />
+        </property>
+        <property name="createBy" type="java.lang.Integer">
+            <column name="create_by" />
+        </property>
+        <property name="createDate" type="date">
+            <column name="create_date" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 15, 2012 8:28:08 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.haak.haaksq.autogen.VWorklist" table="v_worklist" catalog="haaksquare_db">
+        <composite-id name="id" class="com.haak.haaksq.autogen.VWorklistId">
+            <key-property name="worklistId" type="int">
+                <column name="worklist_id" />
+            </key-property>
+            <key-property name="worklistSeq" type="int">
+                <column name="worklist_seq" />
+            </key-property>
+            <key-property name="communityId" type="java.lang.Integer">
+                <column name="community_id" />
+            </key-property>
+            <key-property name="worklistSubjectName" type="string">
+                <column name="worklist_subject_name" length="200" />
+            </key-property>
+            <key-property name="roleId" type="int">
+                <column name="role_id" />
+            </key-property>
+            <key-property name="fgPublic" type="string">
+                <column name="fg_public" length="1" />
+            </key-property>
+            <key-property name="worklistTypeName" type="string">
+                <column name="worklist_type_name" length="200" />
+            </key-property>
+            <key-property name="worklistStatusName" type="string">
+                <column name="worklist_status_name" length="100" />
+            </key-property>
+            <key-property name="worklistName" type="string">
+                <column name="worklist_name" length="200" />
+            </key-property>
+            <key-property name="worklistDetail" type="string">
+                <column name="worklist_detail" length="2000" />
+            </key-property>
+            <key-property name="phone" type="string">
+                <column name="phone" length="200" />
+            </key-property>
+            <key-property name="fromUserName" type="string">
+                <column name="from_user_name" length="100" />
+            </key-property>
+            <key-property name="fromName" type="string">
+                <column name="from_name" length="200" />
+            </key-property>
+            <key-property name="fromEmail" type="string">
+                <column name="from_email" length="100" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

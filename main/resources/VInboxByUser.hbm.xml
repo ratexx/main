@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 15, 2012 8:28:08 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.haak.haaksq.form.VInboxByUser" table="v_inbox_by_user" catalog="haaksquare_db">
+            <id name="id" type="int">
+                <column name="id" />
+            </id>
+            <property name="worklistTypeName" type="string">
+                <column name="worklist_type_name" length="200" />
+            </property>
+            <property name="worklistName" type="string">
+                <column name="worklist_name" length="200" />
+            </property>
+            <property name="worklistDetail" type="string">
+                <column name="worklist_detail" length="2000" />
+            </property>
+            <property name="fromUserName" type="string">
+                <column name="from_user_name" length="100" />
+            </property>
+            <property name="fromName" type="string">
+                <column name="from_name" length="200" />
+            </property>
+            <property name="fromEmail" type="string">
+                <column name="from_email" length="100" />
+            </property>
+            <property name="toUserName" type="string">
+                <column name="to_user_name" length="100" />
+            </property>
+            <property name="worklistSubjectName" type="string">
+                <column name="worklist_subject_name" length="200" />
+            </property>
+            <property name="communityId" type="java.lang.Integer">
+                <column name="community_id" />
+            </property>
+            <property name="roleId" type="int">
+                <column name="role_id" />
+            </property>
+            <property name="fgPublic" type="string">
+                <column name="fg_public" length="1" />
+            </property>
+            <property name="worklistStatusId" type="java.lang.Integer">
+                <column name="worklist_status_id" />
+            </property>
+            <property name="worklistId" type="int">
+                <column name="Worklist_Id" />
+            </property>
+            <property name="userId" type="int">
+                <column name="user_id" />
+            </property>
+            <property name="jobDetails" type="string">
+                <column name="job_details" length="2000" />
+            </property>
+            <property name="fromUserId" type="java.lang.Integer">
+                <column name="from_user_id" />
+            </property>
+            <property name="fgShowQuestName" type="string">
+                <column name="fg_show_quest_name" length="1" />
+            </property>
+            <property name="fgShowAnswerName" type="string">
+                <column name="fg_show_answer_name" length="1" />
+            </property>
+            <property name="addressId" type="java.lang.Integer">
+                <column name="address_id" />
+            </property>
+            <property name="createBy" type="java.lang.Integer">
+                <column name="create_by" />
+            </property>
+            <property name="createDate" type="date">
+                <column name="create_date" length="10" />
+            </property>
+            <property name="modifyDate" type="timestamp">
+                <column name="modify_date" length="19" />
+            </property>
+            <property name="modifyBy" type="java.lang.Integer">
+                <column name="modify_by" />
+            </property>
+        
+    </class>
+</hibernate-mapping>

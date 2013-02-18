@@ -1,0 +1,60 @@
+.col1, .col2, .col3, .cols {float:left}
+.col1 {width:304px}
+.col2 {width:632px}
+.cols {width:268px}
+
+.colhome11 {float:left}
+.colhome11 {width:100%}
+
+.colhome21, .colhome22  {float:left}
+.colhome21 {width:560px}
+.colhome22 {width:560px}
+
+.colhome31, .colhome32, .colhome33 {float:left}
+.colhome31 {width:400px}
+.colhome32 {width:400px}
+.colhome33 {width:320px}
+.colhomes {width:200px}
+
+.colhome01, .colhome02  {float:left}
+.colhome01 {width:460px}
+.colhome02 {width:460px}
+
+
+.colhome311, .colhome321, .colhome331 {float:left}
+.colhome311 {width:400px}
+.colhome321 {width:400px}
+.colhome331 {width:320px}
+
+
+
+.logo1, .logo2, .logo3 {float:left}
+.logo1 {width:125px;padding:0px 8px;}
+.logo2{width:400px;font-size:13px;line-height:20px;font-weight:bold;padding:0px 4px;}
+
+
+
+.colproject1, .colproject2, .colproject3, .colprojects {float:left}
+.colproject1 {width:50%}
+.colproject2 {width:50%}
+
+.colsitemapLogo2 {float:left}
+.colsitemap1, .colsitemap2, .colsitemap3, .colscolsitemap,.colsitemapFooter,.colsitemapLogo {float:left}
+.colsitemap1 {width:160px}
+.colsitemapFooter {width:80px}
+.colsitemapLogo {width:50%}
+/* page1 */
+
+#page1 header nav {top:72px}
+
+#page1 .text1 {padding:199px 0 0 47px}
+#page1 #icons {padding:42px 0 0 353px}
+#page1 header {padding-bottom:183px}
+#page1 .marg_top {margin-top:-150px}
+/* page2 */
+/* page3 */
+/* page4 */
+/* page5 */
+#page5 .col1 .col2 {width:80px;letter-spacing:-1px}
+#page5 .col1 .col3 {width:140px}
+/* page6 */

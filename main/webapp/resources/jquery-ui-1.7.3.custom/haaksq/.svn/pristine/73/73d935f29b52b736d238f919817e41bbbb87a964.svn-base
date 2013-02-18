@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 1, 2012 8:25:42 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.haak.haaksq.form.SmsCredit" table="sms_credit" catalog="haaksquare_db">
+        <composite-id name="id" class="com.haak.haaksq.autogen.SmsCreditId">
+            <key-property name="smsCreditId" type="int">
+                <column name="sms_credit_id" />
+            </key-property>
+            <key-property name="communityId" type="int">
+                <column name="community_id" />
+            </key-property>
+        </composite-id>
+        <property name="creditTotal" type="java.lang.Long">
+            <column name="credit_total" precision="10" scale="0" />
+        </property>
+        <property name="modifyBy" type="java.lang.Integer">
+            <column name="modify_by" />
+        </property>
+        <property name="modifyDate" type="timestamp">
+            <column name="modify_date" length="19" />
+        </property>
+        <property name="createBy" type="java.lang.Integer">
+            <column name="create_by" />
+        </property>
+        <property name="createDate" type="date">
+            <column name="create_date" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 23, 2012 11:44:03 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.haak.haaksq.form.VBoard" table="v_board" catalog="haaksquare_db">
+        <composite-id name="id" class="com.haak.haaksq.form.VBoardId">
+            <key-property name="firstName" type="string">
+                <column name="first_name" length="200" />
+            </key-property>
+            <key-property name="lastName" type="string">
+                <column name="last_name" length="200" />
+            </key-property>
+            <key-property name="email" type="string">
+                <column name="email" length="200" />
+            </key-property>
+            <key-property name="positionName" type="string">
+                <column name="position_name" length="200" />
+            </key-property>
+            <key-property name="positionLevel" type="int">
+                <column name="position_level" />
+            </key-property>
+            <key-property name="attachSeq" type="int">
+                <column name="attach_seq" />
+            </key-property>
+            <key-property name="fileTypeId" type="int">
+                <column name="file_type_id" />
+            </key-property>
+            <key-property name="fileName" type="string">
+                <column name="file_name" length="200" />
+            </key-property>
+            <key-property name="pathName" type="string">
+                <column name="path_name" length="200" />
+            </key-property>
+            <key-property name="fileDetail" type="string">
+                <column name="file_detail" length="2000" />
+            </key-property>
+            <key-property name="communityId" type="int">
+                <column name="community_id" />
+            </key-property>
+            <key-property name="languageId" type="int">
+                <column name="language_id" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

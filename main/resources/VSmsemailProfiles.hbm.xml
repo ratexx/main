@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 6, 2012 11:30:46 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.haak.haaksq.form.VSmsemailProfiles" table="v_smsemail_profiles" catalog="haaksquare_db">
+            <id name="addressId" type="int">
+                <column name="address_id" />
+            </id>
+            <property name="addressNo" type="string">
+                <column name="address_no" length="1000" />
+            </property>
+            <property name="soi" type="string">
+                <column name="soi" length="200" />
+            </property>
+            <property name="moo" type="string">
+                <column name="moo" length="200" />
+            </property>
+            <property name="communityId" type="int">
+                <column name="community_id" />
+            </property>
+            <property name="roleId" type="int">
+                <column name="role_id" />
+            </property>
+            <property name="userName" type="string">
+                <column name="user_name" length="20" />
+            </property>
+            <property name="road" type="string">
+                <column name="road" length="200" />
+            </property>
+            <property name="email" type="string">
+                <column name="email" length="100" />
+            </property>
+            <property name="mobile" type="string">
+                <column name="mobile" length="100" />
+            </property>
+        
+    </class>
+</hibernate-mapping>
